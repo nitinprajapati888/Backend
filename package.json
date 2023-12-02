@@ -2,9 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Backend starting",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "javascript",
@@ -14,5 +15,14 @@
     "nitinprajapati88811"
   ],
   "author": "Nitin Prajapati",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier": "^3.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.2"
+  }
 }
